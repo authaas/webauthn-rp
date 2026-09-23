@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+enum ResidentKey {
+  RESIDENT_KEY_UNSPECIFIED = 0;
+  RESIDENT_KEY_DISCOURAGED = 1;
+  RESIDENT_KEY_PREFERRED = 2;
+  RESIDENT_KEY_REQUIRED = 3;
+}

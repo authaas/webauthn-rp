@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+enum UserVerification {
+  USER_VERIFICATION_UNSPECIFIED = 0;
+  USER_VERIFICATION_DISCOURAGED = 1;
+  USER_VERIFICATION_PREFERRED = 2;
+  USER_VERIFICATION_REQUIRED = 3;
+}

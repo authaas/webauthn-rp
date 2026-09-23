@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+enum CoseAlgorithm {
+  COSE_ALGORITHM_UNSPECIFIED = 0;
+  COSE_ALGORITHM_EDDSA = -8;
+  COSE_ALGORITHM_ES256 = -7;
+  COSE_ALGORITHM_RS256 = -257;
+}

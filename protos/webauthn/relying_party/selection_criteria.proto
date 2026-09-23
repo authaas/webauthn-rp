@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+import "webauthn/modality/attachment.proto";
+import "webauthn/relying_party/resident_key.proto";
+import "webauthn/relying_party/user_verification.proto";
+
+message SelectionCriteria {
+  modality.Attachment authenticator_attachment = 1;
+  ResidentKey resident_key = 2;
+  bool require_resident_key = 3;
+  UserVerification user_verification = 4;
+}

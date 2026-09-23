@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+import "webauthn/relying_party/cose_algorithm.proto";
+
+message Parameters {
+  CoseAlgorithm alg = 1;
+}

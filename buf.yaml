@@ -4,6 +4,9 @@ modules:
   - path: protos
     name: buf.build/authaas/webauthn-rp
 
+deps:
+  - buf.build/authaas/webauthn-modality
+
 lint:
   use:
     - STANDARD
