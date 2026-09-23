@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+import "webauthn/relying_party/id.proto";
+
+// Entity is the relying party a credential is created for.
+message Entity {
+  ID id = 1;
+
+  // A human-palatable name, shown to the user during a ceremony.
+  string name = 2;
+}

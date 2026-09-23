@@ -1,0 +1,11 @@
+version: v2
+
+modules:
+  - path: protos
+    name: buf.build/authaas/webauthn-rp
+
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_VERSION_SUFFIX

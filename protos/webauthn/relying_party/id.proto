@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package webauthn.relying_party;
+
+// ID is the relying party identifier a credential was issued under.
+message ID {
+  string value = 1;
+}
